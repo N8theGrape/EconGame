@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="cow.jpg">
+        <title>Mooving Mayhem</title>                           <!-- WEBSITE TITLE -->
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- JS -->
+        <script src="code.js"></script>
+        <script src="life.js"></script>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <div class="nav">
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <a href="https://n8thegrape.github.io">
+                <button>
+                    <strong>
+                        Home
+                    </strong>
+                </button>
+            </a>
+
+            <a href="https://n8thegrape.github.io">
+                <button>
+                    <strong>
+                        About Me
+                    </strong>
+                </button>
+            </a>
+
+            <a href="https://n8thegrape.github.io">
+                <button>
+                    <strong>
+                        Contact
+                    </strong>
+                </button>
+            </a>
+
+            <a href="https://n8thegrape.github.io">
+                <button>
+                    <strong>
+                        Portfolio
+                    </strong>
+                </button>
+            </a>
+
+            <a href="https://n8thegrape.github.io">
+                <button>
+                    <strong>
+                        Login
+                    </strong>
+                </button>
+            </a>
+            
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Header -->
+        <header>
+            <!-- MAKE HEADER -->
+            <h1>Moving Mayhem</h1>
+            <h2>Nathan Gillespie</h2>
+        </header>
+
+        <!-- Main Website Body-->
+        <main>
+            <!-- MAKE WEBSITE BODY -->
+            <div id="HowToPlay">
+                <br> <h1>How to Play</h1> <br>
+                <hr><br>
+                <p>Click on the options you would choose </p>
+                <br>
+                <button id="StartButton" onclick="startGame();" class="choiceButton">
+                    <strong>
+                        START
+                    </strong>
+                </button>
+            </div>
+            <div id="Game" hidden>
+                <br>
+                <div id="questions">
+                    <div id="question">
+                        <p class="question" id="prompt">An Error Has Occured</p>
+                        <br><br>
+                        <div id="options">
+                            <div>
+                                <button class="option gradientBlueWhite" onclick="goToQuestion('', '');" id="option1">
+                                    <span>Error</span>
+                                    <br>
+                                    <p class="description">
+                                        Seek Help
+                                    </p>
+                                </button>
+                                <button class="option" onclick="goToQuestion('','');" id="option2">
+                                    Error
+                                    <br>
+                                    <p class="description">
+                                        Seek Help
+                                    </p>
+                                </button>
+                            </div>
+                            <div>
+                                <br><br>
+                                <button class="option" onclick="goToQuestion('','');" id="option3">
+                                    Error
+                                    <br>
+                                    <p class="description">
+                                        Seek Help
+                                    </p>
+                                </button>
+                                <button class="option" onclick="goToQuestion('','');" id="option4">
+                                    Error
+                                    <br>
+                                    <p class="description">
+                                        Seek Help
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+            </div>
+            <div id="EndGame" hidden>
+                <br>
+                <h1>Your Choices</h1>
+                <p>You can click on your choices if you want to change them.</p>
+                <br><hr><br>
+                <div id="questions">
+                    <div id="chosenQuestion">
+                        <div id="chosenOptions">
+                            <div>
+                                <button class="option choiceButton" onclick="goToQuestion('locationType', 'void', null);" id="chosenLocationType">
+                                </button>
+                                <button class="option choiceButton" onclick="goToQuestion('houseType','void', null);" id="chosenHouseType">
+                                </button>
+                                <button class="option choiceButton" onclick="goToQuestion('movingCompany','void', null);" id="chosenMovingCompany">
+                                </button>
+                            </div>
+                            <br>
+                            <div>
+                                <button class="option choiceButton" onclick="goToQuestion('job','void', null);" id="chosenJob">
+                                </button>
+                                <button class="option choiceButton" onclick="goToQuestion('occupants','void', null);" id="chosenOccupants">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                    <br><hr><br>
+                    <h1>Analysis</h1>
+                    <p>What does this mean for you?</p>
+                    <br><hr><br>
+                    <p id="jobAnalysis">Error Analysing</p>
+                _-->
+            </div>
+        </main>
+    </body>
+</html>
+
+
+
+
+<!--
+Things to Add:
+    Where to live
+
+
+Other Notes:
+
+
+
+
+-->

@@ -1,0 +1,255 @@
+/* Default Settings */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    color: #eee;
+}
+
+/* Navigation Bar */
+    /* Default */
+.nav {
+    text-align: center;
+    background-color: #333;
+    border: 1vw solid black;
+    position:fixed;
+    width:100%;
+    top:-1vw;
+    left:-1vw;
+    min-height: 5vw;
+    z-index: 9;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    /* Default Elements */
+.nav * {
+    font-size: 1.5vw;
+    margin: auto;
+}
+    /* Default Button */
+.nav button {
+    position: relative;
+    padding: 0.75vw 3vw;
+    border: none;
+    border-radius: 1.5vw;
+    outline:none;
+    cursor: pointer;
+    background-color: #DDD;
+    width: 15vw;
+}
+    /* Hover Button */
+.nav button:hover {
+    background-color: #AAA;
+}
+.nav button:active {
+    background-color: #888;
+}
+
+/* Header */
+    /* Default */
+header {
+    text-align: center;
+    background-color: #1A1A1A;
+    padding: 15px;
+    height: 15vw;
+}
+    /* Default Elements */
+header * {
+    color: #eee;
+}
+    /* Header 1 Elements */
+header h1 {
+    font-size: 4vw;
+    position:relative;
+    top: 4vw;
+}
+    /* Header 6 Elements */
+header h2 {
+    font-size: 1.5vw;
+    position:relative;
+    top:1.5vw;
+}
+    /* Hover Elements */
+/*header *:hover {}*/
+
+/* Main Body */
+    /* Default */
+main {
+    /*max-width: 800px; */
+    width: 80%;
+    margin: 1vw auto;
+    margin-bottom: 6vw;
+    padding: 1% 5%;
+    background-color: #fff;
+    border-radius: 1vw;
+    box-shadow: 0 0 25px #111f;
+    text-align: center;
+}
+/* Main How To Play Page */
+    /* Default Elements */
+main #HowToPlay *{
+    color: #222;
+    margin: auto;
+    text-align: center;
+    font-size: 125%;
+}
+    /* Header 1 Elements */
+main #HowToPlay h1 {
+    font-size: 400%;
+}
+    /* Default Button */
+main #HowToPlay button {
+    position: relative;
+    padding: 0.75vw 3vw;
+    border: 0.25vw solid #555;
+    border-radius: 1.5vw;
+    outline:none;
+    cursor: pointer;
+    background-color: #DDD;
+    min-width: 15vw;
+    font-size: 200%;
+}
+    /* Hover Button */
+main #HowToPlay button:hover {
+    background-color: #AAA;
+}
+main #HowToPlay button:active {
+    background-color: #888;
+}
+
+/* Main Game */
+    /* Default Elements */
+main #Game * {
+    color: #222;
+    margin: auto;
+    text-align: center;
+    font-size: 125%;
+}
+    /* Header 1 Elements */
+main #Game h1 {
+    font-size: 400%;
+}
+    /* Default Button */
+main #Game button {
+    position: relative;
+    padding: auto 3vw;
+    border: 0.25vw solid #555;
+    border-radius: 1.5vw;
+    outline:none;
+    cursor: pointer;
+    background-color: #DDD;
+    width: 25vw;
+}
+main #Game button * {
+    display: block !important;
+}
+main #Game button * * {
+    display: inline !important;
+}
+
+main #Game #questions {
+    display: flex;
+}
+main #Game #questions * {
+    display: inline;
+}
+main #Game .option .description {
+    font-size: 50%;
+}
+main #Game .option {
+    min-height: 30vw;
+}
+main #Game #prompt {
+    font-size: 200%;
+}
+main #Game span {
+    font-size: 100%;
+}
+
+
+main #EndGame * {
+    color: #222;
+    margin: auto;
+    text-align: center;
+    font-size: 125%;
+}
+    /* Header 1 Elements */
+main #EndGame h1 {
+    font-size: 400%;
+}
+    /* Default Button */
+main #EndGame button {
+    position: relative;
+    padding: auto 3vw;
+    border: 0.25vw solid #555;
+    border-radius: 1.5vw;
+    outline:none;
+    cursor: pointer;
+    background-color: #DDD;
+    width: 25vw;
+}
+main #EndGame button * {
+    display: block !important;
+}
+main #EndGame button * * {
+    display: inline !important;
+}
+main #EndGame #chosenQuestions {
+    display: flex;
+}
+main #EndGame #chosenQuestions * {
+    display: block;
+}
+main #EndGame .option .description {
+    font-size: 50%;
+}
+main #EndGame .option {
+    min-height: 30vw;
+}
+main #EndGame #prompt {
+    font-size: 200%;
+}
+main #EndGame span {
+    font-size: 100%;
+}
+
+/* Footer */
+    /* Default */
+footer {
+    text-align: center;
+    color: #eee;
+    background-color: #1A1A1A;
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100vw;
+    margin: 0;
+    padding: 1vw;
+    height: 2vw;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    /* Default Elements */
+footer * {
+    color: #eee;
+    text-decoration: none;
+    font-size: 1.25vw;
+    margin: auto;
+}
+    /* Hover Elements */
+footer *:hover {
+    color:#aaa;
+}
+
+
+.choiceButton {
+    background: linear-gradient(#efe,#cfd, #cfd, #cfd, #afb);
+}
+.choiceButton:hover {
+    background: linear-gradient(#cdc,#bfb, #bfb, #bfb, #6a6);
+}
+.choiceButton:active {
+    background: linear-gradient(#cdc,#9fa, #9fa, #9fa, #080);
+}
