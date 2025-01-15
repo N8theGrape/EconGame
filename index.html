@@ -83,6 +83,8 @@
                         START
                     </strong>
                 </button>
+                <br><br>
+                <p smallText>More options coming soon</p>
             </div>
             <div id="Game" hidden>
                 <br>
@@ -93,35 +95,15 @@
                         <div id="options">
                             <div>
                                 <button class="option gradientBlueWhite" onclick="goToQuestion('', '');" id="option1">
-                                    <span>Error</span>
-                                    <br>
-                                    <p class="description">
-                                        Seek Help
-                                    </p>
                                 </button>
                                 <button class="option" onclick="goToQuestion('','');" id="option2">
-                                    Error
-                                    <br>
-                                    <p class="description">
-                                        Seek Help
-                                    </p>
                                 </button>
                             </div>
                             <div>
                                 <br><br>
                                 <button class="option" onclick="goToQuestion('','');" id="option3">
-                                    Error
-                                    <br>
-                                    <p class="description">
-                                        Seek Help
-                                    </p>
                                 </button>
                                 <button class="option" onclick="goToQuestion('','');" id="option4">
-                                    Error
-                                    <br>
-                                    <p class="description">
-                                        Seek Help
-                                    </p>
                                 </button>
                             </div>
                         </div>
@@ -148,6 +130,8 @@
                             </div>
                             <br>
                             <div>
+                                <button class="option choiceButton" onclick="goToQuestion('jobField','void', null);" id="chosenJobField">
+                                </button>
                                 <button class="option choiceButton" onclick="goToQuestion('job','void', null);" id="chosenJob">
                                 </button>
                                 <button class="option choiceButton" onclick="goToQuestion('occupants','void', null);" id="chosenOccupants">
@@ -156,29 +140,12 @@
                         </div>
                     </div>
                 </div>
-                <!--
-                    <br><hr><br>
-                    <h1>Analysis</h1>
-                    <p>What does this mean for you?</p>
-                    <br><hr><br>
-                    <p id="jobAnalysis">Error Analysing</p>
-                _-->
+                <br><hr><br>
+                <h1>Analysis</h1>
+                <p>What does this mean for you?</p>
+                <br><hr><br>
+                <p id="analysis"></p>
             </div>
         </main>
     </body>
 </html>
-
-
-
-
-<!--
-Things to Add:
-    Where to live
-
-
-Other Notes:
-
-
-
-
--->

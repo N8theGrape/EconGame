@@ -130,6 +130,9 @@ main #Game * {
 main #Game h1 {
     font-size: 400%;
 }
+main #Game span {
+    height: 5vw;
+}
     /* Default Button */
 main #Game button {
     position: relative;
@@ -155,10 +158,10 @@ main #Game #questions * {
     display: inline;
 }
 main #Game .option .description {
-    font-size: 50%;
+    font-size: 40%;
 }
 main #Game .option {
-    min-height: 30vw;
+    min-height: 25vw;
 }
 main #Game #prompt {
     font-size: 200%;
@@ -174,6 +177,9 @@ main #EndGame * {
     text-align: center;
     font-size: 125%;
 }
+main #EndGame span {
+    height: 5vw;
+}
     /* Header 1 Elements */
 main #EndGame h1 {
     font-size: 400%;
@@ -181,7 +187,7 @@ main #EndGame h1 {
     /* Default Button */
 main #EndGame button {
     position: relative;
-    padding: auto 3vw;
+    padding: auto 32w;
     border: 0.25vw solid #555;
     border-radius: 1.5vw;
     outline:none;
@@ -202,16 +208,19 @@ main #EndGame #chosenQuestions * {
     display: block;
 }
 main #EndGame .option .description {
-    font-size: 50%;
+    font-size: 40%;
 }
 main #EndGame .option {
-    min-height: 30vw;
+    min-height: 25vw;
 }
 main #EndGame #prompt {
     font-size: 200%;
 }
 main #EndGame span {
     font-size: 100%;
+}
+main #EndGame #analysis {
+    text-align: justify;
 }
 
 /* Footer */
@@ -252,4 +261,8 @@ footer *:hover {
 }
 .choiceButton:active {
     background: linear-gradient(#cdc,#9fa, #9fa, #9fa, #080);
+}
+
+[smallText] {
+    font-size: 75% !important;
 }
